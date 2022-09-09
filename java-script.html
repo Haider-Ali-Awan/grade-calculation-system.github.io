@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="marksheet.css">
+</head>
+<body>
+    
+<center>
+
+    <div class="top-heading">
+       <h2> Grade Calculation System</h2>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<div>
+    <img src="./youtube project/assets/Profile.jpg" alt="haider,s pic">
+</div>
+
+
+
+
+     <div class="container">
+        <form>
+            <div class="book1">
+                <label class="subjects">Computer</label>
+                <input style="border-radius: 5px;" id = "bookone" placeholder="Marks" type="number" name="" id="">
+            </div>
+            <br>
+
+            <div class="book2">
+                <label class="subjects">English</label>
+                <input style="border-radius: 5px;" id = "booktwo" placeholder="Marks" type="number" name="" id="">
+            </div>
+            <br>
+
+            <div class="book3">
+                <label class="subjects">Urdu</label>
+                <input style="border-radius: 5px;" id = "bookthree" placeholder="Marks" type="number" name="" id="">
+            </div>
+            <br>
+            
+
+            <div class="book4">
+                <label class="subjects">Math</label>
+                <input style="border-radius: 5px;" id = "bookfour" placeholder="Marks" type="number" name="" id="">
+            </div>
+            <br>
+            
+
+            <div class="book5">
+                <label class="subjects">Physics</label>
+                <input style="border-radius: 5px;" id = "bookfive" placeholder="Marks" type="number" name="" id="">
+            </div>
+            <br>
+        </form>
+    </div>
+
+
+        <button onclick="return calculate()">Calculate</button>
+      
+
+        <div class="table-div">
+        <table>
+            <tr>
+                <td>Total Marks :</td>
+                <td>500</td>
+            </tr>
+
+
+
+            <tr>
+                <td>Obtained Marks :</td>
+                <td id="obtain"></td>
+            </tr>
+            
+
+
+            <tr>
+                <td>Percentage :</td>
+                <td id="per"></td>
+            </tr>
+            
+
+
+
+
+
+            <tr>
+                <td>Grade :</td>
+                <td id="grade"></td>
+            </tr>
+            
+
+
+
+
+            <tr>
+                <td>ReMarks :</td>
+                <td id="remarks"></td>
+            </tr>
+            
+
+
+
+
+
+        </table>
+    </div>
+     
+
+
+    </center>
+<script src="app.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,113 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+
+    background-color:paleturquoise;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+
+
+
+.top-heading{
+
+    background-color: lightslategray;
+    color: white;
+}
+
+
+
+
+
+img{
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.subjects{
+
+    display:block;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.table-div{
+
+    border: 1px solid bisque;
+    background-color:bisque;
+    margin-top: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+button{
+
+    background-color: darkgray;
+    border-radius: 10px;
+
+}
+
+button:hover{
+
+    background-color: grey;
+}
+
+
+
+
+
+
