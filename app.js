@@ -279,104 +279,129 @@
 
 function calculate (){
 
-var a = parseInt (document.getElementById("bookone").value);
-var b = parseInt (document.getElementById("booktwo").value);
-var c = parseInt (document.getElementById("bookthree").value);
-var d = parseInt (document.getElementById("bookfour").value);
-var e = parseInt (document.getElementById("bookfive").value);
+var computer = document.getElementById("bookone").value;
+var english = document.getElementById("booktwo").value;
+var urdu = document.getElementById("bookthree").value;
+var math = document.getElementById("bookfour").value;
+var physics = document.getElementById("bookfive").value;
 
 
-
-if (a > 100 || b>100  || c>100  || d>100 || e>100){
-    alert("Please Enter Correct marks");
-
-
-}
-
-else{
-    var obtain = a+b+c+d+e;
-    document.getElementById("obtain").innerHTML=obtain
-    var per = obtain/500*100;
-    document.getElementById("per").innerHTML=per
-
-}
-
-if (a >= 35 && b >= 35  && c >= 35  && d >= 35 && e >= 35) {
-    document.getElementById("remarks").innerHTML="pass";
-}
-
-
-else{
-    document.getElementById("remarks").innerHTML="Fail";
-}
-
-
-
-
-
-if (per >= 80) {
-    document.getElementById("grade").textContent="A+";
-}
+if(computer == ""
+    || english == ""
+    || urdu == ""
+    || math == ""
+    || physics == ""
+    ){
+        alert("plese fill all fields")
+    }else if(
+        computer > 100
+        ||
+        english > 100
+        ||
+        urdu > 100
+        ||
+        math > 100
+        ||
+        physics > 100
+        ||
+        computer < 0
+        ||
+        english < 0
+        ||
+        math < 0
+        ||
+        physics < 0
+        ||
+        urdu < 0){
 
 
-else if (per >= 70) {
-    document.getElementById("grade").textContent="A";
-}
+        alert("Invalid input : marks can not be greater than 100 and less than 0!")
 
+    }else{
 
-
-
-else if (per >= 60) {
-    document.getElementById("grade").textContent="B";
-}
-
-
-
-
-
-
-else if (per >= 50) {
-    document.getElementById("grade").textContent="C";
-}
-
-
-
-
-
-
-
-
-else if (per >= 40) {
-    document.getElementById("grade").textContent="D";
-}
-
-
-
-
-
-
-
-
-
-
-else if (per >= 35) {
-    document.getElementById("grade").textContent="E";
-}
-
-
-
-else{
-    document.getElementById("grade").textContent="F";
-}
-
-
-
-
-
-
-
-
-return false;
+        var totalMarks = 500;
+        var grade = "";
+        var totalObtainMarks =parseInt(computer) + parseInt(english) + parseInt(urdu) + parseInt(math) + parseInt(physics);
+        var percentage = totalObtainMarks /500*100;
     
+
+        if(percentage >= 80){
+            grade = "A+";
+        }
+
+        else if(percentage >= 70){
+            grade = "A"
+        }
+        else if(percentage >= 60){
+            grade = "B"
+        }
+        else if(percentage >= 50){
+            grade = "C"
+        }
+        else if(percentage >= 40){
+            grade = "D"
+        }
+        else if(percentage >= 35){
+            grade = "D"
+        }
+        else{
+            grade = "Fail";
+        }
+
+
+        // setting values in html elements
+
+        document.getElementById("grade").innerHTML = grade;
+        document.getElementById("obtain").innerHTML = totalObtainMarks;
+        document.getElementById("per").innerHTML=percentage.toFixed(2);
+
+
+        if(computer >= 35){
+            document.getElementById("computer").innerHTML = "pass"
+
+        }else{
+            document.getElementById("computer").innerHTML = "fail"
+
+        }
+
+        if(english >= 35){
+            document.getElementById("english").innerHTML = "pass"
+
+        }else{
+            document.getElementById("english").innerHTML = "fail"
+
+        }
+
+        if(urdu >= 35){
+            document.getElementById("urdu").innerHTML = "pass"
+
+        }else{
+            document.getElementById("urdu").innerHTML = "fail"
+
+        }
+
+        if(math >= 35){
+            document.getElementById("math").innerHTML = "pass"
+
+        }else{
+            document.getElementById("math").innerHTML = "fail"
+
+        }
+
+        if(physics >= 35){
+            document.getElementById("physics").innerHTML = "pass"
+
+        }else{
+            document.getElementById("physics").innerHTML = "fail"
+
+        }
+
+        
+
+
+        
+
+
+    }
 
 }

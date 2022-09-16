@@ -28,6 +28,14 @@ body{
 
     background-color: lightslategray;
     color: white;
+    font-size: larger;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+    box-shadow: 3px 3px 3px 3px black;
+
+    
+    
+    
 }
 
 
@@ -36,8 +44,8 @@ body{
 
 img{
 
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
 
 }
@@ -55,19 +63,31 @@ img{
 
 
 
-
-
-
-
 .subjects{
 
     display:block;
+    font-size: x-large;
+   
+    
+    
 
 }
 
 
 
 
+
+
+
+
+input{
+
+    font-size:x-large;
+    display: inline-block;
+    border: 1px solid;
+    box-shadow: 3px 3px 3px 3px black;
+
+}
 
 
 
@@ -83,8 +103,13 @@ img{
     border: 1px solid bisque;
     background-color:bisque;
     margin-top: 10px;
+    font-size: x-large;
 
 }
+
+
+
+
 
 
 
@@ -97,7 +122,12 @@ img{
 button{
 
     background-color: darkgray;
-    border-radius: 10px;
+    border-radius: 20px;
+    font-size: x-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid;
+    box-shadow: 2px 2px 2px 2px black;
+
 
 }
 
@@ -111,3 +141,35 @@ button:hover{
 
 
 
+.grade-div{
+
+    width: 300px;
+
+    text-align: left;
+
+}
+
+
+
+
+
+.button-div{
+
+
+    width: 300px;
+    text-align: left;
+}
+
+.bottom-marquee{
+
+    background-color: black;
+    opacity: 0.5;
+
+    
+}
+
+
+h1{
+
+    color: white;
+}

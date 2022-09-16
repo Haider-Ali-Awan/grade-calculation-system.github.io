@@ -12,7 +12,7 @@
 <center>
 
     <div class="top-heading">
-       <h2> Grade Calculation System</h2>
+       <h1> Grade Calculation System</h1>
     </div>
 
 
@@ -23,10 +23,8 @@
 
 
 
-
-
 <div>
-    <img src="./youtube project/assets/Profile.jpg" alt="haider,s pic">
+    <img src="./Profile.jpg" alt="haider,s pic">
 </div>
 
 
@@ -36,7 +34,7 @@
         <form>
             <div class="book1">
                 <label class="subjects">Computer</label>
-                <input style="border-radius: 5px;" id = "bookone" placeholder="Marks" type="number" name="" id="">
+                <input style="border-radius: 5px;" id = "bookone" placeholder="Marks" type="number" name="" id="" >
             </div>
             <br>
 
@@ -67,12 +65,14 @@
             <br>
         </form>
     </div>
-
-
-        <button onclick="return calculate()">Calculate</button>
-      
+<br>
+<div class="button-div">    
+<button  onclick="calculate()">Calculate</button>
+</div>
+<br>
 
         <div class="table-div">
+         <div class="grade-div">   
         <table>
             <tr>
                 <td>Total Marks :</td>
@@ -108,8 +108,33 @@
 
 
             <tr>
-                <td>ReMarks :</td>
-                <td id="remarks"></td>
+                <td><strong>Details<strong></td>
+            
+            </tr>
+
+            <tr>
+                <td>Computer</td>
+                <td id="computer"></td>
+            </tr>
+
+            <tr>
+                <td>English</td>
+                <td id="english"></td>
+            </tr>
+
+            <tr>
+                <td>Urdu</td>
+                <td id="urdu"></td>
+            </tr>
+
+            <tr>
+                <td>Math</td>
+                <td id="math"></td>
+            </tr>
+
+            <tr>
+                <td>Physics</td>
+                <td id="physics"></td>
             </tr>
             
 
@@ -118,10 +143,15 @@
 
 
         </table>
+    </div>  
     </div>
      
-
-
+<marquee>
+    <div class="bottom-marquee">
+    <h1>Thank You For Using Our Services Website texts are texts that are created especially for use on the Internet. Text is the most important 
+    </h1>
+</marquee>
+</div>
     </center>
 <script src="app.js"></script>
     
