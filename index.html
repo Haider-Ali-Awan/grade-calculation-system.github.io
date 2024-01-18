@@ -154,6 +154,29 @@
 </div>
     </center>
 <script src="app.js"></script>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBV8L_WsHbNZPGca82Y8GnQHLhFa3PruvI",
+      authDomain: "grade-calculation-system.firebaseapp.com",
+      projectId: "grade-calculation-system",
+      storageBucket: "grade-calculation-system.appspot.com",
+      messagingSenderId: "1021142232377",
+      appId: "1:1021142232377:web:fcba8f347d0ac231838ce8",
+      measurementId: "G-2BNQ43QCRD"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
     
 </body>
 </html>
